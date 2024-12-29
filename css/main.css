@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Parkinsans", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.first_part {
+    background-image: url(../images/background\ mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul {
+    list-style: none;
+    background-color: rgb(35, 35, 88);
+}
+
+ul li {
+    text-align: center;
+    padding: 10px;
+}
+
+#btn {
+    background-color: #FF1493;
+    padding: 7px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#btn:hover {
+    background-color: white;
+    color: #FF1493;
+    border: 2px solid #FF1493;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+header h1 {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 4%;
+}
+
+label div {
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 4%;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+header input {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+main {
+    width: 300px;
+    height: 200px;
+    color: white;
+    text-align: center;
+}
+
+main p {
+    border-bottom: 5px solid #FF1493;
+    padding-bottom: 7px;
+    font-size: 22px;
+    width: 90%;
+}
+
+main h2 {
+    text-transform: uppercase;
+}
+
+.second_part h2 {
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 5px solid #FF1493;
+    width: 250px;
+    padding-bottom: 15px;
+    margin: 3% auto;
+
+}
+
+.card img {
+    width: 100%;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 55%;
+    height: 390px;
+    margin: auto;
+    box-shadow: 5px 10px 8px 10px #888888;
+    cursor: pointer;
+}
+
+.card a {
+    margin-bottom: 20%;
+}
+
+.card:hover {
+    transform: translateX(40px);
+}
+
+#card_two {
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+.third_part {
+    background-image: url(../images/trip_in_mountains.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 590px;
+    text-align: center;
+    color: white;
+}
+
+.third_part h2 {
+    text-transform: uppercase;
+    border-bottom: 5px solid #FF1493;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.third_part p {
+    text-align: justify;
+    margin: 3% 15%;
+}
+
+.fourth_part {
+    text-align: center;
+}
+
+.fourth_part h2 {
+    text-transform: uppercase;
+    border-bottom: 5px solid #FF1493;
+    width: 300px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.fourth_part p {
+    color: rgba(0, 0, 0, 0.479);
+}
+
+.fourth_part img {
+    width: 80%;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+.fourth_part img:hover {
+    width: 90%;
+}
+
+footer {
+    background-color: rgb(35, 35, 88);
+    text-align: center;
+    color: white;
+    height: 100px;
+}
+
+@media only screen and (min-width: 600px) {
+    label {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+    }
+
+    nav ul li a:focus,
+    nav ul li a:hover {
+        color: #FF1493;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .card {
+        width: 70%;
+        height: 88%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    #card_one {
+        margin-top: 8%;
+        margin-bottom: 10%;
+    }
+
+    .third_part {
+        height: 450px;
+    }
+
+    .fourth_part a {
+        display: block;
+        width: 20%;
+        margin: auto;
+    }
+
+    .pack_image {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .fourth_part {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 400px;
+    }
+
+    .main_structure h2 {
+        margin-right: 50%;
+        font-size: 45px;
+        text-align: justify;
+    }
+
+    .main_structure p {
+        text-align: justify;
+        margin: auto 10%;
+    }
+
+    .main_structure a {
+        margin-top: 2%;
+    }
+
+    .pack_image {
+        width: 120%;
+    }
+}
